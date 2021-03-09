@@ -44,7 +44,7 @@ def sendMessage(message, is_test=False, print_only=False):
         testhook = Webhook.from_url(testwebhookURL, adapter=RequestsWebhookAdapter())
         testhook.send(message)
     elif not print_only:
-        webhooktimerUrl = credentials.timerbot
+        webhooktimerUrl = credentials.timerbotURL
         timerhook = Webhook.from_url(webhooktimerUrl, adapter=RequestsWebhookAdapter())
         timerhook.send(message)
 
