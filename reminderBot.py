@@ -22,7 +22,7 @@ def main():
     parser.add_argument('-p', '--print_only', action='store_true', help='Only print output, do not send to Discord')
     parser.add_argument('-t', '--test_server', action='store_true', help='Send to test channel/server, not production.')
     args = parser.parse_args()
-    message = "<@834577975369269248> This is your 10 minute warning for the Daily Candle Reset."
+    message = "<@&833034011575713792> This is your 10 minute warning for the Daily Candle Reset."
     sendMessage(message, is_test=args.test_server, print_only=args.print_only)
 
 # sends messge when ran
